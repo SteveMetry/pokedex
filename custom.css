@@ -1,0 +1,48 @@
+ul {
+  margin-left: 1.25rem !important;
+}
+
+.ul-types {
+  list-style: disc;
+}
+
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  background-color: #E0D8E7;
+  animation: spin 2s infinite;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.pokecard {
+  background-color: #F7CC46;
+  border: solid 3px #FF0000;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  height: 88vh;
+  width: 420px;
+  -webkit-box-shadow: 10px 15px 23px 12px rgba(47,111,177,1);
+  -moz-box-shadow: 10px 15px 23px 12px rgba(47,111,177,1);
+  box-shadow: 10px 15px 23px 12px rgba(47,111,177,1);
+}
+
+.pokecard-img {
+  width: 280px;
+  height: 280px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.poketable {
+  width: 100;
+  height: auto;
+  overflow-y: auto;
+ 
+}
