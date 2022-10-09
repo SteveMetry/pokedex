@@ -1,3 +1,7 @@
+body{
+  background-color:#E0D8E7;
+}
+
 ul {
   margin-left: 1.25rem !important;
 }
@@ -19,17 +23,12 @@ ul {
   background-color: #F7CC46;
   border: solid 3px #FF0000;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-  height: 88vh;
-  width: 420px;
   -webkit-box-shadow: 10px 15px 23px 12px rgba(47,111,177,1);
   -moz-box-shadow: 10px 15px 23px 12px rgba(47,111,177,1);
   box-shadow: 10px 15px 23px 12px rgba(47,111,177,1);
 }
 
-.pokecard-img {
-  width: 280px;
-  height: 280px;
-}
+
 
 @keyframes spin {
   from {
@@ -44,5 +43,25 @@ ul {
   width: 100;
   height: auto;
   overflow-y: auto;
- 
+}
+@media screen and (min-device-width: 300px){
+  .pokecard {
+    min-height: 88vh;
+    width: 80%;
+  }
+  .pokecard-img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (min-device-width: 750px){
+  .pokecard {
+    min-height: 88vh;
+    width: 420px;
+  }
+  .pokecard-img {
+    width: 280px;
+    height: 280px;
+  }
 }
